@@ -1,11 +1,13 @@
 import React from 'react'
 import { View, ImageBackground, StyleSheet, Text } from 'react-native'
+import colors from '../config/colors'
 
 function Login() {
     return (
         <ImageBackground
             source={require('../assets/images/blackWizard.jpeg')}
             style={styles.background}
+            resizeMode="stretch"
         >
             <View style={styles.buttons}>
                 <View style={styles.loginButton} >
@@ -25,17 +27,17 @@ const styles = StyleSheet.create({
         justifyContent: 'center'
     },
     loginButton: {
-        backgroundColor: 'grey',
+        backgroundColor: colors.PRIMARY,
         width: '100%',
-        height: 70,
+        height: 60,
         alignItems: 'center',
         justifyContent: 'center',
         borderRadius: 50
     },
     registerButton: {
-        backgroundColor: 'tomato',
+        backgroundColor: colors.SECONDARY,
         width: '100%',
-        height: 70,
+        height: 60,
         alignItems: 'center',
         justifyContent: 'center',
         borderRadius: 50,
@@ -45,7 +47,7 @@ const styles = StyleSheet.create({
         top: '17%'
     },
     buttonTextStyle: {
-        color: 'white',
+        color: colors.WHITE,
         fontSize: 20,
         fontWeight: 'bold'
     }

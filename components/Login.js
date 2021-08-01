@@ -10,6 +10,7 @@ function Login() {
             <Image
                 source={require('../assets/images/blackWizard.jpeg')}
                 style={{ width: '100%', height: '100%', top: StatusBar.currentHeight, flex: 9 }}
+                resizeMode="contain"
             />
             <View
                 style={{

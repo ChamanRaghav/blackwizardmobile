@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleSheet, StatusBar, Platform, View, SafeAreaView } from 'react-native';
 import ImagePreview from './components/ImagePreview';
 import Login from './components/Login';
+import ViewImageScreen from './components/ViewImageScreen';
 import WelcomeScreen from './components/WelcomeScreen'
 
 export default function App() {
@@ -11,7 +12,8 @@ export default function App() {
       flex: 1
     }}>
       {/* <Login /> */}
-      <WelcomeScreen />
+      {/* <WelcomeScreen /> */}
+      <ViewImageScreen />
       {/* <ImagePreview /> */}
     </SafeAreaView>
   );
